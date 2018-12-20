@@ -178,6 +178,21 @@ nav a img {
   font-style: italic;
 }
 
+/* --- COOKIE Information Banner --- */
+.cc_container .cc_btn {
+  background-color: var(--secondary-color) !important; /* Farbe des Buttons */
+  color: #fff !important; /* Textfarbe des Buttons */
+  }
+
+  .cc_container {
+  background: #fff !important; /* Hintergrundfarbe des gesamten Bereichs */
+  color: var(--primary-color) !important; /* Schriftfarbe des gesamten Bereichs */
+  }
+
+  .cc_container a {
+  color: #31a8f0 !important; /* Textlink-Farbe "Mehr Infos" */
+  }
+
 /*------header------*/
 
 header {
