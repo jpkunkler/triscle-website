@@ -173,6 +173,11 @@ nav a img {
   transform: rotate(45deg) translate(-6px, -5px);
 }
 
+.quote-author {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
 /*------header------*/
 
 header {
