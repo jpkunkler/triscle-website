@@ -1,0 +1,571 @@
+/*------global------*/
+
+:root {
+  --primary-color: #5C794F;
+  --secondary-color: #9F8F6A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  font-family: Raleway, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 100;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.btnOutline {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  width: 175px;
+  height: 53px;
+  line-height: 53px;
+  text-align: center;
+  margin-top: 30px;
+  transition: .3s ease-out;
+}
+
+.btnOutline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btnFilled {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  width: 175px;
+  height: 53px;
+  line-height: 53px;
+  text-align: center;
+  margin-top: 30px;
+  transition: .3s ease-out;
+}
+
+.btnFilled:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.show {
+  visibility: visible;
+}
+
+/*------global------*/
+
+nav {
+  line-height: 150px;
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: #202427;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+
+nav a:first-child {
+  float: left;
+  font-size: 30px;
+}
+
+nav a:first-child span {
+  margin-left: 10px;
+  color: grey;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+nav a img {
+  vertical-align: middle;
+}
+
+#menu-toggle {
+  background-color: transparent;
+  height: 40px;
+}
+
+#toggle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+#toggle .span {
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+  width: 70%;
+}
+
+#toggle #two {
+  width: 40%;
+  transition: width .3s ease-out;
+}
+
+#toggle:hover #two {
+  width: 70%;
+  transition: width .3s ease-out;
+}
+
+.toggle-container {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 70%;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px auto;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -5px);
+  transform: rotate(45deg) translate(-6px, -5px);
+}
+
+/*------header------*/
+
+header {
+  height: 1000px;
+  min-height: 1000px;
+  padding: 0 5%;
+  background-image: url(./static/images/header1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+header h1 {
+  width: 45%;
+  margin: 2em 0 0 0;
+}
+
+/*------portfolio------*/
+
+.portfolio {
+  text-align: center;
+  margin: 10em 0 10em 0;
+  padding: 0 5%;
+  background-image: url(./static/images/background1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.portfolio h1 {
+  width: 50%;
+  margin: 0 auto 30px auto;
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  margin: 0 30px;
+  color: #202407;
+}
+
+.game img {
+  width: 120px;
+  transition: .3s;
+}
+
+.game img:hover {
+  width: 150px;
+}
+
+.game h3 {
+  margin-bottom: 5px;
+}
+
+/*------Teamspeak Users------*/
+
+.users {
+  padding: 0 5%;
+  background-image: url(./static/images/background-users_new.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 80%;
+  height: 900px;
+  min-height: 900px;
+}
+
+.users h1 {
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
+.tsusers {
+  height: 120px;
+  text-align: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.users h1,
+.tsusers {
+  margin-left: 50%;
+}
+
+/*------team------*/
+
+.team {
+  text-align: center;
+  margin: 10em 0 10em 0;
+  padding: 0 5%;
+  background-image: url(./static/images/background2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team h1 {
+  width: 50%;
+  margin: 0 auto 30px auto;
+}
+
+.councils {
+  display: flex;
+  justify-content: center;
+}
+
+.council {
+  margin: 0 30px;
+  color: #202407;
+}
+
+.council h3 {
+  margin-bottom: 5px;
+}
+
+.council img {
+  width: 120px;
+  opacity: .5;
+}
+
+/*------History------*/
+
+.history {
+  padding: 0 5%;
+  background-image: url(./static/images/background_thrall.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 80%;
+  height: 900px;
+  min-height: 900px;
+}
+
+.history h1 {
+  margin-bottom: 30px;
+  padding-top: 300px;
+}
+
+.history h1,
+.history a {
+  margin-right: 50%;
+}
+
+/*------Call To Action------*/
+
+.callToAction {
+  padding: 0 5%;
+  background-image: url(./static/images/banner4.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 35%;
+  height: 900px;
+  min-height: 900px;
+  margin-bottom: 5em;
+}
+
+.callToAction h1 {
+  margin-bottom: 30px;
+  padding-top: 400px;
+  margin-left: 40%;
+}
+
+.callToAction h1,
+.callToAction a {
+  display: inline-block;
+}
+
+.callToAction a {
+  margin-left: 80px;
+  vertical-align: middle;
+  margin-bottom: 50px;
+}
+
+/*------Footer------*/
+
+footer {
+  color: var(--primary-color);
+  padding-bottom: 40px;
+}
+
+footer p,
+.footerPages {
+  display: inline-block;
+}
+
+.footerPages {
+  float: right;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 100;
+  color: var(--primary-color);
+  margin-left: 30px;
+  transition: .2s;
+  position: relative;
+}
+
+footer a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+footer a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#footer::before {
+  display: block;
+  content: '';
+  background: url(./static/images/footer-panda.svg);
+  height: 300px;
+  margin-top: -20px;
+  width: 100%;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-content {
+  padding: 0 5%;
+}
+
+/*------responsive------*/
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #subtitle {
+    visibility: hidden;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    background-color: black;
+  }
+  .slide-menu {
+    color: black;
+    margin-right: 5px;
+  }
+  nav a::before {
+    background-color: black;
+  }
+  nav a span {
+    visibility: hidden;
+  }
+  header {
+    height: 1600px;
+    min-height: 1600px;
+    background-image: url(./static/images/mobile_background_header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+  }
+  header h1 {
+    width: 100%;
+  }
+  .portfolio {
+    margin: 3em 0 3em 0;
+    background-image: url(./static/images/background1.svg);
+    background-position: center;
+    background-size: contain;
+  }
+  .portfolio h1 {
+    width: 100%;
+  }
+  .games {
+    flex-direction: column;
+  }
+  .game {
+    margin-top: 30px;
+  }
+  .users {
+    padding: 0 5%;
+    background-image: url(./static/images/mobile_background_about.png);
+    background-position: left center;
+    background-size: contain;
+    overflow-y: visible;
+    height: 900px;
+    min-height: 900px;
+  }
+  .users h1 {
+    padding-top: 800px;
+  }
+  .users h1,
+  .tsusers {
+    margin-left: 0;
+  }
+  .team {
+    text-align: center;
+    margin: 5em 0 5em 0;
+    padding: 0 5%;
+    background-image: url(./static/images/background2.svg);
+    background-repeat: no-repeat;
+  }
+  .team h1 {
+    width: 100%;
+    padding-top: 300px;
+  }
+  .councils {
+    flex-direction: column;
+  }
+  .council {
+    width: 90px;
+    margin-bottom: 30px;
+  }
+  .history {
+    padding: 0 5%;
+    background-image: url(./static/images/background_thrall.png);
+    background-position: right center;
+    background-size: contain;
+    overflow-y: visible;
+    height: 900px;
+    min-height: 900px;
+  }
+  .history h1 {
+    padding-top: 800px;
+  }
+  .history h1,
+  .history a {
+    margin-right: 0;
+  }
+  .callToAction {
+    margin-top: 5em;
+    padding: 5em 5% 5em 5%;
+    background-size: 60%;
+    text-align: center;
+  }
+  .callToAction h1,
+  .callToAction a {
+    margin-bottom: 30px;
+  }
+  .callToAction h1 {
+    padding-top: 900px;
+    margin-left: 0;
+  }
+  .callToAction a {
+    margin-left: 0;
+  }
+  footer {
+    text-align: center;
+  }
+  .footerPages {
+    visibility: hidden;
+  }
+  footer p,
+  .footerPages {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 1150px;
+    min-height: 1150px;
+  }
+  header h1 {
+    margin: 1em 0 0 0;
+  }
+  .councils {
+    flex-direction: column;
+  }
+  .games {
+    flex-direction: column;
+  }
+  .game {
+    margin-top: 30px;
+  }
+  .team {
+    padding-top: 300px;
+  }
+  .callToAction {
+    background-size: 80%;
+  }
+  .callToAction h1 {
+    padding-top: 700px;
+    margin-left: 0;
+  }
+  .callToAction a {
+    margin-left: 0;
+  }
+}
